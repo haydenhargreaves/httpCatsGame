@@ -6,6 +6,8 @@
 
 This Streamlit application is a fun and educational quiz designed to test your knowledge of HTTP response codes. It utilizes the adorable `http.cat` API to display cat images corresponding to each HTTP code, making learning enjoyable.
 
+**A demo of this app can be found [here](https://httpcats.streamlit.app).**
+
 ## Features
 
 * **Quiz Format:** Presents multiple-choice questions about HTTP response codes.
