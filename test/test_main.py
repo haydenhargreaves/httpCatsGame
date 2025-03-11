@@ -17,7 +17,7 @@ def test_random_choices():
         code: tuple[int, str] = random_code()
         choices = random_choices(code[0], size)
         assert code[1] in choices
-        assert len(set(choices)) == size
+        assert len(set(choices)) == size + 1
 
 
 def test_get_code_from_msg():
