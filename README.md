@@ -1,5 +1,7 @@
 # HTTP Cat Quiz
 
+![I am a teapot http code 418](https://http.cat/418.jpg)
+
 ## Description
 
 This Streamlit application is a fun and educational quiz designed to test your knowledge of HTTP response codes. It utilizes the adorable `http.cat` API to display cat images corresponding to each HTTP code, making learning enjoyable.
