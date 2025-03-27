@@ -3,6 +3,8 @@ Stores the http codes and various functions for working
 with them.
 """
 
+import random
+
 from typing import Dict, List, Optional
 from random import choice
 
@@ -113,5 +115,7 @@ def random_choices(code: int, count: int) -> List[str]:
         (cd, msg) = random_code(sel_codes)
         sel_codes.append(cd)
         lst.append(msg)
+
+    random.shuffle(lst)
 
     return lst

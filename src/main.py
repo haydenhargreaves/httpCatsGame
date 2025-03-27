@@ -22,9 +22,11 @@ def get_cat(ans: str):
 
 # Initialize session state with the generated data
 if "quiz_data" not in st.session_state:
+    # Stores a list of the correct answers, so that way we dont
+    codes: List[int] = []
     quiz_data: List[Dict[str, any]] = []
     for _ in range(quiz_size):
-        code: tuple[int, str] = random_code()
+        code: tuple[int, str] = random_code(codes)
         quiz_data.append(
             {
                 "question": f"What is the message for HTTP code: {code[0]}",
@@ -32,6 +34,7 @@ if "quiz_data" not in st.session_state:
                 "correct_answer": code[1],
             }
         )
+        codes.append(code[0])
     st.session_state.quiz_data = quiz_data
 
 # Set a blank state for the users answers
