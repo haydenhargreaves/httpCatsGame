@@ -12,6 +12,7 @@ from codes import random_code, random_choices, get_code_from_msg
 # Global value
 # * Size of the quiz
 quiz_size: int = 5
+question_count: int = 5
 
 
 @st.cache_data
@@ -30,7 +31,7 @@ if "quiz_data" not in st.session_state:
         quiz_data.append(
             {
                 "question": f"What is the message for HTTP code: {code[0]}",
-                "options": random_choices(code[0], 4),
+                "options": random_choices(code[0], question_count),
                 "correct_answer": code[1],
             }
         )
