@@ -1,5 +1,7 @@
 # HTTP Cat Quiz
 
+[![Run Pytest Tests](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml)
+
 ![I am a teapot http code 418](https://http.cat/418.jpg)
 
 ## Description
