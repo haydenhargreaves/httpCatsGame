@@ -10,5 +10,4 @@ COPY src src
 
 EXPOSE 8501
 
-
 CMD [ "streamlit", "run", "src/main.py" ]
