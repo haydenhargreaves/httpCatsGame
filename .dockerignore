@@ -1,0 +1,9 @@
+.git
+.github
+.idea
+.idea
+/**/__pycache__
+README.md
+shell.nix
+.mypy_cache
+.pytest_cache
