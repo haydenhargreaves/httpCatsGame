@@ -1,0 +1,12 @@
+- name: Run a command on the Ansible host
+  hosts: localhost
+  tasks:
+    - name: Create Droplet
+      command: python3 ../src/droplet/create.py
+
+    - name: Wait for Digital Ocean
+      ansible.builtin.pause:
+        seconds: 30
+
+    - name: Assign IP to Droplet
+      command: python ../src/droplet/assign.py
