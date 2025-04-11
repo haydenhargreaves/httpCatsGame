@@ -2,7 +2,7 @@
 
 [![Run Pytest Tests](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml)
 [![Build and Push Docker Image](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml)
-[![Demo](https://img.shields.io/badge/LiveDemo-green.svg)]
+![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
 
 
 ![I am a teapot http code 418](https://http.cat/418.jpg)
