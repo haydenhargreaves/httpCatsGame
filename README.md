@@ -4,9 +4,12 @@
 [![Build and Push Docker Image](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml)
 
 
+<div align="center">
+
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
+</div>
 
 
 ![I am a teapot http code 418](https://http.cat/418.jpg)
