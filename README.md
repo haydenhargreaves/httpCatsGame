@@ -1,10 +1,10 @@
 # HTTP Cat Quiz
 
-[![Run Pytest Tests](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml)
-[![Build and Push Docker Image](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml)
-
 
 <div align="center">
+
+[![Run Pytest Tests](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/pytest.yml)
+[![Build and Push Docker Image](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml/badge.svg)](https://github.com/haydenhargreaves/httpCatsGame/actions/workflows/docker-build.yml)
 
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
