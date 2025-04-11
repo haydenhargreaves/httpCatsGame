@@ -84,6 +84,7 @@ This Streamlit application is a fun and educational quiz designed to test your k
 ## Automated Deployment with Ansible
 
 This project includes Ansible playbooks to automate the deployment of the HTTP Cat Quiz on a DigitalOcean Droplet.
+The IP will be automaticall applied when the playbooks are ran, to ensure a constant location for connection and DNS setup.
 
 ### Setup
 
@@ -97,17 +98,20 @@ This project includes Ansible playbooks to automate the deployment of the HTTP C
 
 3.  **Configure DigitalOcean API Token:** Ensure you have a DigitalOcean API token with write access. You can create one in your DigitalOcean control panel under "API".
 
-4.  **Create an Inventory File (e.g., `inventory.ini`):**
+4.  **Create an Inventory File (e.g., `inventory/hosts.yml`):**
 
-    ```ini
-    [digitalocean]
-    do_token=<your_digitalocean_api_token>
+    ```yml
 
-    [webservers]
-    your_droplet_ip ansible_user=root # Replace with your droplet's IP and user (e.g., ubuntu)
+    all:
+      vars:
+        ansible_connection: ssh
+      hosts:
+        <name>:
+          ansible_user: <user>
+          domain: <domain>
+          hostname: <hostname>
     ```
 
-    **Note:** For the `createdroplet.yml` playbook, you won't need the `[webservers]` section initially. The IP will be dynamically assigned.
 
 ### Running the Playbooks
 
