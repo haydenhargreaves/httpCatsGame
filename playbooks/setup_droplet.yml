@@ -1,0 +1,23 @@
+- name: Setup droplet for deployment
+  hosts: all
+  become: true
+  vars:
+    packages:
+      - vim
+      - wget
+      - btop
+      - docker.io
+  tasks:
+    - name: Ensure packages are installed
+      apt:
+        name: "{{ packages }}"
+        state: present
+
+    - name: Install public HTTP Cats Game Application
+      community.docker.docker_container:
+        name: httpcats
+        image: ghcr.io/haydenhargreaves/httpcatsgame/my-image:master
+        state: started
+        restart_policy: unless-stopped
+        published_ports:
+          - "80:8501"

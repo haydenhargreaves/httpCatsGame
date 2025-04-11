@@ -6,7 +6,7 @@
 
     - name: Wait for Digital Ocean
       ansible.builtin.pause:
-        seconds: 30
+        minutes: 1
 
     - name: Assign IP to Droplet
       command: python ../src/droplet/assign.py
