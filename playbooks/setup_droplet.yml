@@ -16,7 +16,7 @@
     - name: Install public HTTP Cats Game Application
       community.docker.docker_container:
         name: httpcats
-        image: ghcr.io/haydenhargreaves/httpcatsgame/my-image:master
+        image: ghcr.io/haydenhargreaves/httpcatsgame:latest
         state: started
         restart_policy: unless-stopped
         published_ports:
