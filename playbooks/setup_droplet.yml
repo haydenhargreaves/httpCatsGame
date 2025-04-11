@@ -1,4 +1,4 @@
-- name: Setup droplet for deployment
+- name: Setup Droplet for deployment
   hosts: all
   become: true
   vars:

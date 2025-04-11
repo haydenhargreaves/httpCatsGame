@@ -1,4 +1,4 @@
-- name: Run a command on the Ansible host
+- name: Create Droplet
   hosts: localhost
   tasks:
     - name: Create Droplet
